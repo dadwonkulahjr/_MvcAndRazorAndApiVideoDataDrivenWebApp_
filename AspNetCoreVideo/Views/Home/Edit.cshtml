@@ -1,0 +1,12 @@
+﻿@model Video
+@{ 
+    ViewData["Title"] = "Edit";
+}
+
+<h2 class="display-4 text-primary">
+    Edit Video
+</h2>
+<hr />
+<form method="post" asp-action="Edit">
+    <partial name="_editVideo" />
+</form>

@@ -1,0 +1,37 @@
+﻿@model IEnumerable<VideoViewModel>
+@{ 
+    ViewData["Title"] = "Video Details";
+}
+
+<h1 class="display-4 text-primary">
+    Video Details
+</h1>
+<hr />
+<div class="row">
+    <div class="ml-auto col-4 m-0">
+        <a asp-action="Create" class="btn btn-primary w-100 mb-2 p-3">
+            Create new record
+        </a>
+
+    </div>
+</div>
+
+<div class="table-responsive">
+    <table class="table">
+        <thead class="table-dark">
+            <tr>
+                <td>Title</td>
+                <td>Genre</td>
+                <td>Action</td>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var video in Model)
+            {
+                <partial name="_video" model="video" />
+            }
+
+
+        </tbody>
+    </table>
+</div>

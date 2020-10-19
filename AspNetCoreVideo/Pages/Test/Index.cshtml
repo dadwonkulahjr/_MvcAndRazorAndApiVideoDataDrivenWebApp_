@@ -1,0 +1,44 @@
+﻿@page
+@model AspNetCoreVideo.tuseTheProgrammer.Test.IndexModel
+@{
+    ViewBag.Title = "Intro to Razor Page!";
+}
+
+
+@for (int i = 0; i < 10; i++)
+{
+    <div class="row">
+        <div class="col-12">
+            <div class="card-deck mt-2">
+                <div class="card">
+                    <div class="card-header">
+                        <h1>
+                            Hi, Welcome Dev!
+                        </h1>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            click on the button below
+
+                        </h5>
+                    </div>
+                    <div class="card-footer">
+                        <div class="row">
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-primary">
+                                    Create something
+                                </button>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+}
+

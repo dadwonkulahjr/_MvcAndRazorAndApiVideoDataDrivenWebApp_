@@ -1,0 +1,19 @@
+﻿@model VideoViewModel
+
+<tr>
+    <td>
+        @Model.Title
+    </td>
+    <td>
+        @Model.Genre
+    </td>
+    <td>
+        <div class="row">
+            <div class="col-sm-12">
+                <a asp-action="Details" asp-route-id="@Model.Id" class="btn btn-info mb-2">Details</a>
+                <a asp-action="Delete" asp-route-id="@Model.Id" class="btn btn-danger mb-2">Delete</a>
+                <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-primary mb-2">Edit</a>
+            </div>
+        </div>
+    </td>
+</tr>

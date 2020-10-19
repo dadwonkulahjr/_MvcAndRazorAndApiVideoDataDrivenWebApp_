@@ -1,0 +1,41 @@
+﻿@model Video
+@{
+    ViewData["Title"] = "Create New Record";
+}
+
+<h2 class="display-4 text-primary">
+    Create New Video
+</h2>
+<hr />
+
+<form method="post" asp-action="Create">
+    <div class="row form-group">
+        <label asp-for="Title" class="col-form-label col-md-2"></label>
+        <div class="col-sm-10">
+            <input asp-for="Title" class="form-control" placeholder="Title..." />
+            <span asp-validation-for="Title" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="row form-group">
+        <label asp-for="Genre" class="col-form-label col-md-2"></label>
+        <div class="col-sm-10">
+            <select asp-for="Genre" asp-items="Html.GetEnumSelectList<Genres>()" class="custom-select">
+                <option value="">Select genre</option>
+            </select>
+            <span asp-validation-for="Genre" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="row form-group">
+        <div class="col-sm-10">
+            <button type="submit" class="btn btn-primary">Create</button>
+            <a asp-action="Index" class="btn btn-secondary">
+                Back to List
+            </a>
+        </div>
+    </div>
+</form>
+
+
+@section Scripts{
+    <partial name="_ValidationScriptsPartial" />
+}
