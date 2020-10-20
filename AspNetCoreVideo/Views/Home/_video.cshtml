@@ -1,19 +1,17 @@
 ﻿@model VideoViewModel
 
-<tr>
-    <td>
-        @Model.Title
-    </td>
-    <td>
-        @Model.Genre
-    </td>
-    <td>
-        <div class="row">
-            <div class="col-sm-12">
-                <a asp-action="Details" asp-route-id="@Model.Id" class="btn btn-info mb-2">Details</a>
-                <a asp-action="Delete" asp-route-id="@Model.Id" class="btn btn-danger mb-2">Delete</a>
-                <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-primary mb-2">Edit</a>
+    <div class="col-sm-12">
+        <div class="card mt-2">
+            <h5 class="card-header bg-primary text-white card-title">
+                @Model.Title
+            </h5>
+            <div class="card-body">
+                @Model.Genre
+                <div class="text-left">
+                    <a class="btn btn-outline-secondary" asp-action="Details" asp-route-id="@Model.Id">Details</a>
+                    <a class="btn btn-outline-secondary" asp-action="Edit" asp-route-id="@Model.Id">Edit</a>
+                    <a class="btn btn-outline-danger" asp-action="Delete" asp-route-id="@Model.Id">Delete</a>
+                </div>
             </div>
         </div>
-    </td>
-</tr>
+    </div>

@@ -4,10 +4,10 @@
 }
 
 <h2 class="display-4 text-primary mt-2">
-    Login
+    Log in
 </h2>
 <hr />
-<form method="post" asp-action="Login" asp-controller="Account" asp-route-returnurl="@Model.ReturnUrl">
+<form method="post">
     <div class="text-danger" asp-validation-summary="ModelOnly"></div>
     <div class="row form-group">
         <label asp-for="Email" class="col-form-label col-md-2"></label>

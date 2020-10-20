@@ -85,6 +85,10 @@ namespace AspNetCoreVideo.Controllers
                 {
                     return Redirect(model.ReturnUrl);
                 }
+                else
+                {
+                    return RedirectToAction("Index", "Home");
+                }
             }
 
             ModelState.AddModelError(string.Empty, "Invalid username or password.");

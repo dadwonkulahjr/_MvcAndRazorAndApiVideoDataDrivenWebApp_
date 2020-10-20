@@ -1,5 +1,5 @@
 ﻿@model IEnumerable<VideoViewModel>
-@{ 
+@{
     ViewData["Title"] = "Video Details";
 }
 
@@ -16,22 +16,12 @@
     </div>
 </div>
 
-<div class="table-responsive">
-    <table class="table">
-        <thead class="table-dark">
-            <tr>
-                <td>Title</td>
-                <td>Genre</td>
-                <td>Action</td>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var video in Model)
-            {
-                <partial name="_video" model="video" />
-            }
 
 
-        </tbody>
-    </table>
-</div>
+<section class="card-deck">
+
+    @foreach (var video in Model)
+    {
+        <partial name="_video" model="video" />
+    }
+</section>
