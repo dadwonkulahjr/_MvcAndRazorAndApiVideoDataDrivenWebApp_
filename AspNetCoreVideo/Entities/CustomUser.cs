@@ -6,6 +6,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
+
 namespace AspNetCoreVideo.Entities
 {
     public class CustomUser : IdentityUser

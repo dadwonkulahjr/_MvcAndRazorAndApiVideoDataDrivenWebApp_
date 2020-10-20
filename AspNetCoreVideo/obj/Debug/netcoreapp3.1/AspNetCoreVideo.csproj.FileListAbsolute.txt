@@ -448,3 +448,11 @@ C:\Users\Dad S. Wonkulah Jr\source\repos\AspNetCoreVideoDataDrivenWebApp\AspNetC
 C:\Users\Dad S. Wonkulah Jr\source\repos\AspNetCoreVideoDataDrivenWebApp\AspNetCoreVideo\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\Message\Default.cshtml.g.cs
 C:\Users\Dad S. Wonkulah Jr\source\repos\AspNetCoreVideoDataDrivenWebApp\AspNetCoreVideo\obj\Debug\netcoreapp3.1\Razor\Views\Home\_editVideo.cshtml.g.cs
 C:\Users\Dad S. Wonkulah Jr\source\repos\AspNetCoreVideoDataDrivenWebApp\AspNetCoreVideo\obj\Debug\netcoreapp3.1\Razor\Views\Account\Register.cshtml.g.cs
+C:\Users\Dad S. Wonkulah Jr\source\repos\AspNetCoreVideoDataDrivenWebApp\AspNetCoreVideo\bin\Debug\netcoreapp3.1\AutoMapper.dll
+C:\Users\Dad S. Wonkulah Jr\source\repos\AspNetCoreVideoDataDrivenWebApp\AspNetCoreVideo\bin\Debug\netcoreapp3.1\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\Dad S. Wonkulah Jr\source\repos\AspNetCoreVideoDataDrivenWebApp\AspNetCoreVideo\obj\Debug\netcoreapp3.1\AspNetCoreVideo.csproj.CoreCompileInputs.cache
+C:\Users\Dad S. Wonkulah Jr\source\repos\AspNetCoreVideoDataDrivenWebApp\AspNetCoreVideo\obj\Debug\netcoreapp3.1\AspNetCoreVideo.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Dad S. Wonkulah Jr\source\repos\AspNetCoreVideoDataDrivenWebApp\AspNetCoreVideo\obj\Debug\netcoreapp3.1\AspNetCoreVideo.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Dad S. Wonkulah Jr\source\repos\AspNetCoreVideoDataDrivenWebApp\AspNetCoreVideo\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_LoginLinks.cshtml.g.cs
+C:\Users\Dad S. Wonkulah Jr\source\repos\AspNetCoreVideoDataDrivenWebApp\AspNetCoreVideo\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\_UIRazorEntitiesLinks.cshtml.g.cs
+C:\Users\Dad S. Wonkulah Jr\source\repos\AspNetCoreVideoDataDrivenWebApp\AspNetCoreVideo\obj\Debug\netcoreapp3.1\Razor\Pages\Employees\Index.cshtml.g.cs

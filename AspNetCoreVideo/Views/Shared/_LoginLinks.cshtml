@@ -1,0 +1,36 @@
+﻿@inject SignInManager<CustomUser> _signInManager
+@inject UserManager<CustomUser> _userManager
+
+@if (_signInManager.IsSignedIn(User))
+{
+    //Signed user
+    <ul class="navbar-nav ml-auto">
+        @if (_signInManager.IsSignedIn(User))
+        {
+            <li class="nav-item nav-link">
+                <button class="nav-link btn py-0 btn-link text-dark">
+                    Hi, Welcome @User.Identity.Name
+                </button>
+            </li>
+            <li class="nav-item nav-link">
+                <form method="post" asp-action="Logout" asp-controller="Account">
+                    <button class="nav-link btn py-0 btn-link text-dark" type="submit">
+                        Logout
+                    </button>
+                </form>
+            </li>
+        }
+    </ul>
+}
+else
+{
+    //Anonyous user
+    <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+            <a class="nav-link text-dark" asp-action="Login" asp-controller="Account">Login</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-dark" asp-action="Register" asp-controller="Account">Register</a>
+        </li>
+    </ul>
+}
