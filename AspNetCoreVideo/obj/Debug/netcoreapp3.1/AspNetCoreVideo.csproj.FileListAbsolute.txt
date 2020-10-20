@@ -456,3 +456,4 @@ C:\Users\Dad S. Wonkulah Jr\source\repos\AspNetCoreVideoDataDrivenWebApp\AspNetC
 C:\Users\Dad S. Wonkulah Jr\source\repos\AspNetCoreVideoDataDrivenWebApp\AspNetCoreVideo\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_LoginLinks.cshtml.g.cs
 C:\Users\Dad S. Wonkulah Jr\source\repos\AspNetCoreVideoDataDrivenWebApp\AspNetCoreVideo\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\_UIRazorEntitiesLinks.cshtml.g.cs
 C:\Users\Dad S. Wonkulah Jr\source\repos\AspNetCoreVideoDataDrivenWebApp\AspNetCoreVideo\obj\Debug\netcoreapp3.1\Razor\Pages\Employees\Index.cshtml.g.cs
+C:\Users\Dad S. Wonkulah Jr\source\repos\AspNetCoreVideoDataDrivenWebApp\AspNetCoreVideo\obj\Debug\netcoreapp3.1\Razor\Views\Account\Login.cshtml.g.cs

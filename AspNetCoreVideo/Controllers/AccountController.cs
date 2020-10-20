@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using AspNetCoreVideo.Entities;
 using AspNetCoreVideo.ViewModels;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
@@ -58,7 +59,37 @@ namespace AspNetCoreVideo.Controllers
         public async Task<IActionResult> Logout()
         {
             await _signInManager.SignOutAsync();
-            return RedirectToAction("Index", "Home");
+            return RedirectToPage("/Index");
+        }
+        [HttpGet]
+        public IActionResult Login(string returnUrl = "")
+        {
+            var model = new LoginViewModel()
+            {
+                ReturnUrl = returnUrl
+            };
+            return View(model);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Login(LoginViewModel model)
+        {
+            if (!ModelState.IsValid) return View();
+
+            var result = await _signInManager.PasswordSignInAsync(model.Email,
+                model.Password, isPersistent: model.RememberMe, lockoutOnFailure: false);
+
+            if (result.Succeeded)
+            {
+                if(!string.IsNullOrEmpty(model.ReturnUrl) && Url.IsLocalUrl(model.ReturnUrl))
+                {
+                    return Redirect(model.ReturnUrl);
+                }
+            }
+
+            ModelState.AddModelError(string.Empty, "Invalid username or password.");
+
+            return View(model);
         }
     }
 }

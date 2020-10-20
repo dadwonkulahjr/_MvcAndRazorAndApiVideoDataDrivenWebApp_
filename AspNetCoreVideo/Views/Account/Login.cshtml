@@ -1,0 +1,47 @@
+﻿@model LoginViewModel
+@{
+    ViewData["Title"] = "Login";
+}
+
+<h2 class="display-4 text-primary mt-2">
+    Login
+</h2>
+<hr />
+<form method="post" asp-action="Login" asp-controller="Account" asp-route-returnurl="@Model.ReturnUrl">
+    <div class="text-danger" asp-validation-summary="ModelOnly"></div>
+    <div class="row form-group">
+        <label asp-for="Email" class="col-form-label col-md-2"></label>
+        <div class="col-sm-10">
+            <input asp-for="Email" class="form-control" placeholder="Email..." />
+            <span asp-validation-for="Email" class="text-danger"></span>
+        </div>
+
+    </div>
+    <div class="row form-group">
+        <label asp-for="Password" class="col-form-label col-md-2"></label>
+        <div class="col-sm-10">
+            <input asp-for="Password" class="form-control" placeholder="Password..." />
+            <span asp-validation-for="Password" class="text-danger"></span>
+        </div>
+
+    </div>
+    <div class="row form-group">
+        <div class="checkbox">
+            <label asp-for="RememberMe" class="ml-3">
+                <input asp-for="RememberMe">
+                @Html.DisplayNameFor(x => x.RememberMe)
+            </label>
+
+        </div>
+    </div>
+    <div class="row form-group">
+        <div class="col-sm-10">
+            <button type="submit" class="btn btn-outline-primary">Log in</button>
+            <a asp-action="Index" asp-controller="Home" class="btn btn-outline-secondary">Cancel</a>
+        </div>
+    </div>
+</form>
+
+@section Scripts{ 
+    <partial name="_ValidationScriptsPartial" />
+}
